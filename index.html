@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="task-container">
+    <h2>Task Tracker</h2>
+    <form id="task-form">
+      <input type="text" id="new-task" placeholder="Add a new task" required>
+      <button type="submit">Add Task</button>
+    </form>
+    <div id="task-actions">
+      <label>Show:
+        <select id="filter-options">
+          <option value="all">All</option>
+          <option value="active">Active</option>
+          <option value="completed">Completed</option>
+        </select>
+      </label>
+      <button id="clear-completed">Clear Completed</button>
+    </div>
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
